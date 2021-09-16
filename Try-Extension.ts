@@ -1,3 +1,4 @@
+
 namespace Profile{
     let genders: string[] = []
     let Images: Image[] = []
@@ -139,5 +140,15 @@ namespace Profile{
         images.print(scene.backgroundImage(), Names[num], 84, 21, 15)
         images.print(scene.backgroundImage(), convertToText(ages[num]), 84, 34, 15)
         images.print(scene.backgroundImage(), genders[num], 98, 56, 15)
+    }
+    //% block
+    export function Get_Display_Image(num: number): Image{
+        let oldbg: Image
+        let theret: Image
+        oldbg = scene.backgroundImage()
+        Display(num)
+        theret = scene.backgroundImage()
+        scene.setBackgroundImage(oldbg)
+        return(theret)
     }
 }
