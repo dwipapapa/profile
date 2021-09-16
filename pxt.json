@@ -10,13 +10,14 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "assets.json"
+        "assets.json",
+        "Try-Extension.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "1.5.51",
+        "target": "1.5.56",
         "targetId": "arcade"
     },
     "supportedTargets": [
